@@ -63,6 +63,10 @@ li a {
   width: 100%;
 }
 
+.img-car-icon:hover, .dropbtn:focus {
+  background-color:  khaki;
+}
+
 .tag-plus-div {
   background-color: transparent;
   height: 12px;
@@ -77,6 +81,39 @@ li a {
   width: 14px;
   cursor: default;
 }
+
+.carDropdown {
+  margin-left: 35.5em;
+  margin-top: -2.1rem;
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-car {
+  display: none;
+  position: absolute;
+  margin-left: -4rem;
+  background-color:    ghostwhite;
+  min-width: 210px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.number-itens {
+  color: red;
+}
+
+.dropdown-car a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-car a:hover {background-color: #ddd;}
 
 .dropbtn {
   background-color: navajowhite;
@@ -101,6 +138,7 @@ li a {
 }
 
 .dropdown-content {
+  margin-top: 2rem;
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -128,9 +166,67 @@ li a {
 
 .img-container-div {
   position: relative;
-  background-color: black;
+  background-color: transparent;
   width: 260px;
   height: 260px;
   margin-top: 4.8em;
   margin-left: 12em;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.tenis-img {
+  width: 110%;
+  height: 110%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tenis-img:hover {
+  opacity: 0.7;
+}
+
+.company-name-div {
+  position: absolute;
+  background-color: transparent;
+  margin-left: 30em;
+  margin-top: -12em;
+}
+
+.company-name  {
+  font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14px;
+  color:  orange;
+  font-style:  unset;
+  font-weight:  bold;
+}
+
+.product-name-div {
+  background-color: transparent;
+  position: absolute;
+  margin-left: 30em;
+  margin-top: -10em;
+}
+
+.product-name {
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23.5px;
+  font-weight: bolder;
+}
+
+.text-description-div{
+  background-color: transparent;
+  position: absolute;
+  width: 340px;
+  margin-left: 30em;
+  margin-top: -7.5em;
+}
+
+.text-description {
+  font-family:   'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  font-style:  oblique;
+  color:    darkgray;
+  cursor: default;
 }

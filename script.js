@@ -18,3 +18,22 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+function myFunction2() {
+  document.getElementById("carDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.img-car-icon')) {
+    var dropdowns = document.getElementsByClassName("dropdown-car");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
