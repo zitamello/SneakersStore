@@ -82,11 +82,11 @@ function alertFunction() {
   else {
    plus.style.display = 'block';
   }
-  product = product * qt;
   nItem.innerHTML = qt.toString();
-  cost.innerHTML = product.toString();
-}
+  var total = product * qt;
+  cost.innerHTML = total.toString();
 
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
