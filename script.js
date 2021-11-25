@@ -37,3 +37,21 @@ window.onclick = function(event) {
   }
 }
 
+var qt = 0;
+
+function addFunction() {
+  qt = qt + 1;
+  var sqt = qt.toString();
+  document.getElementById('qt-itens').innerHTML = sqt;
+}
+
+function minusFunction() {
+  if (qt == 0){
+    document.getElementById('qt-itens').innerHTML = '0';
+  }
+  else {
+    qt = qt - 1;
+  }
+  var mqt = qt.toString();
+  document.getElementById('qt-itens').innerHTML = mqt;
+}
