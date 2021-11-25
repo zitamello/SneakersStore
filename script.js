@@ -2,7 +2,9 @@ var plus = document.getElementById("plus-tag");
 plus.style.display = 'none';
 
 var nItem = document.getElementById('nItem');
+var cost = document.getElementById('total-cost');
 
+var product = 225.00;
 
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -70,11 +72,15 @@ notification.style.display = 'none';
 function alertFunction() {
   if (qt == 0) {
     notification.style.display = 'block';
+    product = 0;
+    plus.style.display = "none";
   }
   else {
-   plus.style.display = 'block'; 
-   nItem.innerHTML = qt.toString();
-  }
+   plus.style.display = 'block';
+  } 
+  nItem.innerHTML = qt.toString();
+  product = product * qt;
+  cost.innerHTML = product.toString();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
