@@ -25,7 +25,7 @@
         <div class="car-icon-div">
           <img class="img-car-icon" onclick="myFunction2()" src="images/car-icon.png">
           <div id="carDropdown" class="dropdown-car">
-            <span class="item-added-car">You have <span class="number-itens">0</span> itens added to your cart</span>
+            <span class="item-added-car">You have <span id="nItem" class="number-itens">0</span> itens added to your cart</span>
           </div>
         </div>
         <div class="tag-plus-div">
@@ -71,7 +71,11 @@
           <button id="button-plus" class="button is-warning" onclick="addFunction()">+</button>
         </div>
         <div class="add-cart-div">
-          <button id="add-cart" class="button is-warning is-hovered"> add to cart </button>
+          <button id="add-cart" class="button is-warning is-hovered" onclick="alertFunction()"> add to cart </button>
+        </div>
+        <div id="notification-div" class="notification is-danger is-light">
+          <button id="close-notification" onclick="closeFuntion()" class="delete"></button>
+          <p class="notification-text"> Please, choose at least 1 product to add to your cart. </p>
         </div>
       </div>
     </div>

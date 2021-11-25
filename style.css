@@ -322,3 +322,19 @@ li a {
   background-color:  orange;
   opacity: 0.7;
 }
+
+#add-cart:hover {
+  background-color:  chocolate;
+}
+
+#notification-div {
+  position: absolute;
+  margin-left: 30em;
+  margin-top: 3em;
+}
+
+.notification-text {
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  cursor: default;
+}

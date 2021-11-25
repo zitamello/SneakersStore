@@ -1,4 +1,7 @@
-document.getElementById("plus-tag").style.display = 'none';
+var plus = document.getElementById("plus-tag");
+plus.style.display = 'none';
+
+var nItem = document.getElementById('nItem');
 
 
 function myFunction() {
@@ -43,7 +46,11 @@ function addFunction() {
   qt = qt + 1;
   var sqt = qt.toString();
   document.getElementById('qt-itens').innerHTML = sqt;
+  return qt;
 }
+
+var sqt = qt.toString();
+nItem.innerHTML = sqt;
 
 function minusFunction() {
   if (qt == 0){
@@ -55,3 +62,27 @@ function minusFunction() {
   var mqt = qt.toString();
   document.getElementById('qt-itens').innerHTML = mqt;
 }
+
+var notification = document.getElementById('notification-div');
+
+notification.style.display = 'none';
+
+function alertFunction() {
+  if (qt == 0) {
+    notification.style.display = 'block';
+  }
+  else {
+   plus.style.display = 'block'; 
+   nItem.innerHTML = qt.toString();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    const $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.style.display = 'none';
+    });
+  });
+});
