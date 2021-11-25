@@ -121,7 +121,7 @@ li a {
   display: block;
 }
 
-.dropdown-car a:hover {background-color: #ddd;}
+.dropdown-car a:hover {background-color: rgb(233, 233, 233);}
 
 .dropbtn {
   background-color: navajowhite;

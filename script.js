@@ -72,16 +72,21 @@ notification.style.display = 'none';
 function alertFunction() {
   if (qt == 0) {
     notification.style.display = 'block';
-    product = 0;
     plus.style.display = "none";
+    product = 0;
   }
+  else if (qt == 1) {
+   plus.style.display = 'block';
+   product = 225.00;
+  } 
   else {
    plus.style.display = 'block';
-  } 
-  nItem.innerHTML = qt.toString();
+  }
   product = product * qt;
+  nItem.innerHTML = qt.toString();
   cost.innerHTML = product.toString();
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
   (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
