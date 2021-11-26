@@ -180,6 +180,8 @@ li a {
   margin-top: 4.8em;
   margin-left: 12em;
   border-radius: 8px;
+  border-color: orange;
+  border-width: 2px;
   z-index: 1;
 }
 
@@ -189,6 +191,9 @@ li a {
   border-radius: 8px;
   cursor: default;
   transition: 0.2s;
+  border-color: orange;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .tenis-img:hover {
@@ -351,21 +356,17 @@ li a {
 .imgs-container-div {
   height: 120px;
   width: 340px;
-  background-color: black;
+  background-color: transparent;
   margin-top: 3rem;
   margin-left: 10rem;
 }
 
 #first-img {
   position: absolute;
-  background-color:   gray;
   width: 102px;
   height: 102px;
   margin-left: 0.5rem;
   margin-top: 0.5rem;
-  border-width: 2px;
-  border-style: solid;
-  border-color: orange;
   border-radius: 8px;
 }
 
@@ -374,6 +375,9 @@ li a {
   height: 100%;
   border-radius: 8px;
   cursor: pointer;
+  border-color: orange;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .img01:hover {
@@ -384,14 +388,13 @@ li a {
 
 #sec-img {
   position: absolute;
-  background-color:   gray;
   width: 102px;
   height: 102px;
   margin-left: 7.5rem;
   margin-top: 0.5rem;
+  border-radius: 8px;
   border-width: 2px;
   border-style: solid;
-  border-radius: 8px;
 }
 
 .img02 {
@@ -408,9 +411,9 @@ li a {
   opacity: 0.7;
 }
 
+
 #third-img {
   position: absolute;
-  background-color:   gray;
   width: 102px;
   height: 102px;
   margin-left: 14.5rem;

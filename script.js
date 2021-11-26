@@ -97,3 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+function subsImg(imgs) {
+  var expandImg = document.getElementById("myImg");
+  expandImg.src = imgs.src;
+  expandImg.parentElement.style.display = "block";
+  img
+  
+}
