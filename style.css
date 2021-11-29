@@ -6,7 +6,7 @@
 
 #main-box {
   width: 925px;
-  height: 715px;
+  height: 615px;
   margin-left: 10em;
   padding-top: 0.5em;
 }
@@ -343,8 +343,10 @@ li a {
 
 #notification-div {
   position: absolute;
-  margin-left: 30em;
-  margin-top: 3em;
+  margin-left: 32em;
+  margin-top: 3.5em;
+  padding-top: 1rem;
+
 }
 
 .notification-text {
@@ -368,6 +370,7 @@ li a {
   margin-left: 0.5rem;
   margin-top: 0.5rem;
   border-radius: 8px;
+  border-color: gray;
 }
 
 .img01 {
@@ -395,6 +398,7 @@ li a {
   border-radius: 8px;
   border-width: 2px;
   border-style: solid;
+  border-color: gray;
 }
 
 .img02 {
@@ -403,10 +407,10 @@ li a {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.2s;
+  border-color: gray;
 }
 
 .img02:hover {
-  color: gray;
   filter: blur(1px);
   opacity: 0.7;
 }
@@ -421,6 +425,7 @@ li a {
   border-width: 2px;
   border-style: solid;
   border-radius: 8px;
+  border-color: gray;
 }
 
 .img03 {
@@ -429,10 +434,10 @@ li a {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.2s;
+  border-color: gray;
 }
 
 .img03:hover {
-  color: gray;
   filter: blur(1px);
   opacity: 0.7;
 }

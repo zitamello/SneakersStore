@@ -98,11 +98,32 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+var firstImg = document.getElementById("img1");
+var secImg = document.getElementById("img2");
+var thirdImg = document.getElementById("img3");
+
+var firstSq = document.getElementById("first-img");
+var secSq = document.getElementById("sec-img");
+var thirdSq = document.getElementById("third-img");
 
 function subsImg(imgs) {
   var expandImg = document.getElementById("myImg");
   expandImg.src = imgs.src;
   expandImg.parentElement.style.display = "block";
-  img
-  
+  var imgSelected = imgs;
+  if (expandImg.src == firstImg.src) {
+    firstSq.style.borderColor = "orange";
+    secSq.style.borderColor = "gray";
+    thirdSq.style.borderColor = "gray";
+  }
+  else if (expandImg.src == secImg.src) {
+    firstSq.style.borderColor = "gray";
+    secSq.style.borderColor = "orange";
+    thirdSq.style.borderColor = "gray";
+  }
+  else {
+    firstSq.style.borderColor = "gray";
+    secSq.style.borderColor = "gray";
+    thirdSq.style.borderColor = "orange";
+  }
 }
