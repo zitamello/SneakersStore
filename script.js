@@ -112,17 +112,17 @@ function subsImg(imgs) {
   expandImg.parentElement.style.display = "block";
   var imgSelected = imgs;
   if (expandImg.src == firstImg.src) {
-    firstSq.style.borderColor = "orange";
+    firstImg.style.borderColor = "orange";
     secSq.style.borderColor = "gray";
     thirdSq.style.borderColor = "gray";
   }
   else if (expandImg.src == secImg.src) {
-    firstSq.style.borderColor = "gray";
+    firstImg.style.borderColor = "gray";
     secSq.style.borderColor = "orange";
     thirdSq.style.borderColor = "gray";
   }
   else {
-    firstSq.style.borderColor = "gray";
+    firstImg.style.borderColor = "gray";
     secSq.style.borderColor = "gray";
     thirdSq.style.borderColor = "orange";
   }
