@@ -80,7 +80,7 @@ function alertFunction() {
    product = 225.00;
   } 
   else {
-   plus.style.display = 'block';
+    plus.style.display = 'block';
   }
   nItem.innerHTML = qt.toString();
   var total = product * qt;
